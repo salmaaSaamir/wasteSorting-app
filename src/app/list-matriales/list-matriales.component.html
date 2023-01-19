@@ -1,0 +1,21 @@
+<app-nave></app-nave>
+<h1 class=" header  text-center">list matriales page</h1>
+<table class="table text-light text-center">
+    <thead>
+      <tr>
+        <th scope="col">machine-name</th>
+        <th scope="col">matriale-name</th>
+        <th scope="col"> matrial-category</th>
+        <th>total</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let machin of machins;index as i ">
+        <td>{{ machin.name}}</td>
+          <td>{{ machin.matName }} </td>
+          <td>{{ machin.matCat}}</td>
+          <td > {{ calc(machin) }} </td>
+      </tr>
+    </tbody>
+
+</table>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <app-admin-nav></app-admin-nav>
+  <h1 class=" header  text-center">add machine page</h1>
+  <div class=" text-light div">
+    <div class="col-md-6">
+      <label for="inputEmail4" class="form-label" >Machine Name</label>
+      <input type="email" class="form-control" id="inputEmail4" [(ngModel)]="machineName">
+    </div>
+    <div class="col-md-6">
+      <label for="inputPassword4" class="form-label">Machine State</label>
+      <input type="text" class="form-control" id="inputPassword4" [(ngModel)]="machineState">
+    </div>
+    <div class="col-12">
+      <button type="submit" class="btn btn-warning"  (click)="addMachine(machineName,machineState)" [disabled]="!(machineName && machineState)">Add Machine</button>
+    </div>
+    <div class="col-md-6">
+      <img class="img" src="../../assets/New entries-rafiki.svg" alt="">
+    </div>
+  </div>
+</body>
+</html>
+
+

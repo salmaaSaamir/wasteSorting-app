@@ -1,0 +1,23 @@
+<body>
+  <div class="overlay text-light">
+  <form #f="ngForm" class="row g-3 p-3" >
+      <div class="col-md-6">
+        <label for="inputEmail4" class="form-label text-light m-2">Email</label>
+        <input ngModel type="email" name="email"  class="form-control m-2" id="inputEmail4" placeholder="user-email" [(ngModel)] = "form.email" required>
+      </div>
+      <div class="col-md-6">
+        <label for="inputPassword4" class="form-label text-light m-2">Password</label>
+        <input ngModel type="password" name="password" class="form-control m-2" id="inputPassword4" placeholder="user-passowrd" [(ngModel)] = "form.password" required
+          >
+      </div>
+      <div class="col-md-6">
+        <button (click)="login(f)" type="submit" class="btn btn-outline-primary ms-3 mt-1" (click)="increamentCounter()" [disabled]="(disaple)">Sign in</button>
+      </div>
+      <div class="sign-up text-light">
+        <p class="col-12 mt-4">if you don't have an account sign up as user </p>
+        <button (click)="onClick()"  type="button" class="btn btn-outline-danger mt-4">Sign Up</button>
+      </div>
+    </form>
+    <div class="alert alert-danger"  *ngIf="errorMessage">{{ errorMessage}}</div>
+  </div>
+</body>

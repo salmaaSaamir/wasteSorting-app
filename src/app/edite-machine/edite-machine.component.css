@@ -1,0 +1,11 @@
+.header{
+  width: 25%;
+  margin: 30px auto;
+  color: #0f8f64;
+  font-family: auto;
+  text-transform: capitalize;
+  border-left: 2px solid #d4e1b25e;
+  border-bottom: 2px solid #c9bcbcd6;
+  padding: 3px;
+  box-shadow: 4px 4px 11px 1px #286c2b57;
+}

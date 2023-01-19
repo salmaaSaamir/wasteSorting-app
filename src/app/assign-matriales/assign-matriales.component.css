@@ -1,0 +1,150 @@
+body{
+  overflow: hidden;
+}
+.header{
+  width: 35%;
+  margin: 30px auto;
+  color: #0f8f64;
+  font-family: auto;
+  text-transform: capitalize;
+  border-left: 2px solid #d4e1b25e;
+  border-bottom: 2px solid #c9bcbcd6;
+  padding: 3px;
+  box-shadow: 4px 4px 11px 1px #286c2b57;
+}
+.name{
+  border-radius: 20px;
+  font-family: initial;
+  margin: 95px 10px ;
+  text-transform: capitalize;
+  padding: 20px;
+  background-color: #00000075;
+  width: 40%;
+  text-align: center;
+
+}
+.option1{
+  height: 70px;
+  margin:  10px;
+  width: 18%;
+  left: 145px;
+  position: relative;
+  top: -188px;
+
+}
+.option1 .test{
+  background-color: #0f8f64 !important;
+  border: 2px solid #0f8f64;
+}
+.option2 .test{
+  background-color: #0f8f64 !important;
+  border: 2px solid #0f8f64;
+}
+.option2{
+  height: 70px;
+  margin: 10px;
+  width: 18% !important;
+  left: 46.25%;
+  position: relative;
+  top: -188px;
+}
+
+.dropdown-menu{
+  width: 100%;
+  border: none;
+  padding: 5px;
+  font-size: 17px;
+  color: #000000d6;
+  text-transform: capitalize;
+}
+.body{
+      margin: 10px;
+      border-radius: 20px;
+      font-family: initial;
+      top: 40%;
+      margin: 10px;
+      left: 47.75%;
+      text-transform: capitalize;
+      padding: 20px;
+      height: 95px;
+      font-size: 24px;
+      position: absolute;
+      background-color: #00000075;
+      width: 50%;
+}
+.input {
+  padding: 0px 16px ;
+  border: none;
+  height: 50px;
+  border-radius: 10px;
+}
+.input:focus{
+  border: none !important;
+  outline-style: none;
+}
+.label{
+  padding: 0px 16px ;
+  border: none;
+  height: 50px;
+  border-radius: 10px;
+}
+.border1{
+  border: 2px 0px 0px 2px solid #795548;
+    width: 8%;
+    border-top: 2px solid #795548;
+    border-radius: 3px;
+    border-bottom: 2px solid #795548;
+    left: 40.5%;
+    top: 45%;
+    position: absolute;
+    height: 20ox;
+    padding: 20px;
+}
+.border2{
+  margin: 10px;
+  height: 62px;
+  width: 13%;
+  height: 20ox;
+  border: none;
+  position: relative;
+  top: -95px;
+  left: 13%;
+  border-radius: 3px;
+  border-left: 2px solid #795548;
+  border-right: 2px solid #795548;
+}
+.border3{
+  margin: 10px;
+  height: 62px;
+  width: 13%;
+  height: 20ox;
+  border: none;
+  position: relative;
+  top: -165px;
+  left: 68%;
+  border-radius: 3px;
+  border-left: 2px solid #795548;
+  border-right: 2px solid #795548;
+}
+.addList{
+      border: none;
+      background-color: white;
+      color: #0f8f64;
+      margin: 0px 22px;
+      text-transform: capitalize;
+      background-color: none;
+      font-weight: bold;
+      font-family: system-ui;
+}
+.dropdown-toggle
+{
+  font-size: 20px;
+  text-transform: capitalize;
+}
+.p{
+  padding: 0px 25px;
+}
+.assign{
+  font-size: 20px;
+  text-transform: capitalize;
+}

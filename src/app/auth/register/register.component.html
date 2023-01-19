@@ -1,0 +1,48 @@
+<div class="overlay text-light">
+  <h1 class="display-3 text-center m-3">welcom in waste-sorting application</h1>
+  <div class="x">
+    <div class="form-img">
+      <img src="../../../assets/Cyborg-amico.png" alt="">
+    </div>
+    <form #f="ngForm" name="form" (ngSubmit)="signUp(f)" class="row g-3 p-3">
+      <div class="col-md-6">
+        <label for="inputEmail4" class="form-label text-light m-2">Email</label>
+        <input ngModel type="email" name="email"  class="form-control m-2" id="inputEmail4" placeholder="user-email" [(ngModel)] = "form.email" #email="ngModel" required>
+      </div>
+      <div *ngIf="email.invalid && email.touched" class="rounded mx-2 validation">
+        the email must be valid
+      </div>
+      <div class="col-md-6">
+        <label for="inputPassword4" class="form-label text-light m-2">Password</label>
+        <input ngModel type="password"  #password="ngModel" required name="password" class="form-control m-2" id="inputPassword4" placeholder="user-passowrd" [(ngModel)] = "form.password"
+          >
+      </div>
+      <div *ngIf="password.invalid && password.touched" class="rounded mx-2 validation">
+        password must be valid
+      </div>
+      <div class="col-6">
+        <label for="inputAddress" class="form-label text-light m-2">user-name</label>
+        <input ngModel name="name"  #name="ngModel" required type="text" class="form-control m-2" id="inputAddress" placeholder="user-name" [(ngModel)] = "form.name">
+      </div>
+      <div *ngIf="name.invalid && name.touched" class="rounded mx-2 validation">
+        name must be valid
+      </div>
+      <div class="col-6">
+        <label for="inputAddress" class="form-label text-light m-2">user-number</label>
+        <input ngModel name="number"  #number="ngModel" required type="tel" class="form-control m-2" id="inputAddress" placeholder="user-number" [(ngModel)] = "form.phoneNumber">
+      </div>
+      <div *ngIf="number.invalid && number.touched" class="rounded mx-2 validation">
+        number must be valid
+      </div>
+      <div class="sign-up text-light">
+        <button  type="submit" class="btn btn-outline-success mt-4">Sign Up</button >
+      </div>
+      <div class="sign-up text-light">
+        <p class="col-12 mt-4">if you already have an account sign in </p>
+        <button (click)="onClickLogin()"  type="button" class="btn btn-outline-danger mt-4">Sign In</button>
+      </div>
+    </form>
+    <div class="alert alert-danger" *ngIf="errorMessage">{{ errorMessage}}</div>
+  </div>
+</div>
+

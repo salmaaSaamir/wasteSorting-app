@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body class="text-light">
+  <app-nave></app-nave>
+  <h1 class=" header  text-center">assign matriale page</h1>
+  <div class="name">
+    <h1>
+      {{machinData.name}}
+    </h1>
+  </div>
+  <div class="border1"></div>
+  <div class="border2"></div>
+  <div class="body">
+    <label for="" class="label">enetr yoyr matriale</label>
+    <input type="text" class="input" [(ngModel)]="matrialeName">
+  </div>
+  <div class="border3"></div>
+  <div class="btn-group option1">
+    <button type="button" class="btn btn-primary dropdown-toggle test" data-bs-toggle="dropdown" aria-expanded="false">
+      see all matriales
+    </button>
+    <ul class="dropdown-menu" >
+      <li *ngFor="let matriale of matriales"><p class="p">{{ matriale.name }} </p></li>
+      <li><hr class="dropdown-divider"></li>
+      <li><button (click)="matrialePage()" class="addList">add another matriale</button></li>
+    </ul>
+  </div>
+  <div class="option2 btn-group">
+    <button type="button" class="btn btn-primary assign test" (click)="assignMatrial(matrialeName)">assign</button>
+  </div>
+</body>
+
+</html>

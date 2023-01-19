@@ -1,0 +1,35 @@
+<app-nave></app-nave>
+<table class="table text-light text-center">
+  <thead>
+    <tr>
+      <th scope="col">name</th>
+      <th>state</th>
+      <th scope="col">assign</th>
+      <th scope="col"> matrial</th>
+      <th scope="col">options</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let machine of machins">
+      <th scope="row">{{ machine.name }}</th>
+      <th [hidden]="hiden">{{ machine.state}}</th>
+      <th [hidden]="!hiden">
+        <select class="form-select form-select-sm  m-3" [(ngModel)]="machine.state">
+          <option value="on">on</option>
+          <option value="off">off</option>
+          <option value="maintenance">maintenance</option>
+        </select>
+      </th>
+      <td >
+        <button (click)="assign(machine)" [disabled]="disapled(machine.state)" type="button" class="btn btn-outline-secondary m-3">assign matriales</button>
+        <button (click)="addMatrial()" [disabled]="disapled(machine.state)" type="button" class="btn btn-outline-success  m-3" >add matriales</button>
+      </td>
+      <td><a (click)="listMatrial()" type="button" class="btn btn-outline-primary m-3">list all matriales</a></td>
+      <td>
+        <button (click)="editeMachine(machine,machine.state)" (click)="setHidden()"  [hidden]="!hiden" type="button" class="btn btn-outline-warning m-3" >update machine</button>
+        <button (click)="setHidden()" [hidden]="hiden" type="button" class="btn btn-outline-warning m-3" >edit machine</button>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
